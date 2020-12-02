@@ -95,8 +95,8 @@ class DM(object):
     def version(self):
         return self._dm.Ver()
 
-    def SetKeypaDelay(self,a, b):
-        return self._dm.SetKeypaDelay(a, b)
+    def SetKeypaDelay(self):
+        return self._dm.SetKeypaDelay("dx", 10)
 
     def EnableRXY(self, rx=0, ry=0):
         self._rx = rx
